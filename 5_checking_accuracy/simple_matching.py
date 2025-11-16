@@ -3,7 +3,7 @@ Simple Resume-to-Job Matching using SBERT Embeddings
 No LLM needed - pure semantic similarity matching
 """
 
-# Fix for TensorFlow compatibility issues - MUST be set before any imports
+# TensorFlow compatibility issues 
 import os
 os.environ['USE_TF'] = '0'  # Disable TensorFlow backend
 os.environ['USE_TORCH'] = '1'  # Use PyTorch backend
@@ -129,9 +129,9 @@ print(f"✓ Matched {len(resume_df)} resumes to jobs")
 print(f"✓ Average top-1 similarity: {results_df['top1_similarity'].mean():.3f}")
 print(f"✓ Average top-3 similarity: {results_df['top3_similarity'].mean():.3f}")
 
-# ================================================================
+
 # 8. Display Sample Results
-# ================================================================
+
 print("\n" + "="*80)
 print("SAMPLE RESULTS")
 print("="*80)

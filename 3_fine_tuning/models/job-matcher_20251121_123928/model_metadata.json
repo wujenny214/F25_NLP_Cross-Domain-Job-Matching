@@ -1,0 +1,37 @@
+{
+  "model_name": "all-MiniLM-L6-v2",
+  "timestamp": "20251121_123928",
+  "training_params": {
+    "batch_size": 16,
+    "num_epochs": 4,
+    "warmup_steps": 100,
+    "evaluation_steps": 500,
+    "loss_function": "ContrastiveLoss"
+  },
+  "dataset_stats": {
+    "train_size": 4200,
+    "val_size": 900,
+    "test_size": 900,
+    "train_positive_ratio": 0.5
+  },
+  "performance": {
+    "test_accuracy": 0.9966666666666667,
+    "optimal_threshold": 0.63,
+    "roc_auc": 0.9987753086419753,
+    "base_model_accuracy": 0.7888888888888889,
+    "improvement": 0.20777777777777784,
+    "separation_improvement": 0.49329063296318054,
+    "positive_mean_similarity": 0.9828195571899414,
+    "negative_mean_similarity": 0.3098124861717224
+  },
+  "confusion_matrix": [
+    [
+      447,
+      3
+    ],
+    [
+      0,
+      450
+    ]
+  ]
+}

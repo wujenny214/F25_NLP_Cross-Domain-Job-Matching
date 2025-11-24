@@ -1,0 +1,40 @@
+{
+  "model_name": "all-MiniLM-L6-v2",
+  "timestamp": "20251121_190717",
+  "training_approach": "content-based",
+  "training_params": {
+    "batch_size": 16,
+    "num_epochs": 4,
+    "warmup_steps": 100,
+    "evaluation_steps": 500,
+    "loss_function": "ContrastiveLoss"
+  },
+  "dataset_stats": {
+    "train_size": 4200,
+    "val_size": 900,
+    "test_size": 900,
+    "train_positive_ratio": 0.5,
+    "positive_pairs_different_titles": 0.8733333333333333
+  },
+  "performance": {
+    "test_accuracy": 0.9033333333333333,
+    "optimal_threshold": 0.73,
+    "roc_auc": 0.9556345679012345,
+    "base_model_accuracy": 0.6544444444444445,
+    "improvement": 0.24888888888888883,
+    "separation": 0.36613929271698,
+    "separation_improvement": 0.23909679055213928,
+    "positive_mean_similarity": 0.879575252532959,
+    "negative_mean_similarity": 0.513435959815979
+  },
+  "confusion_matrix": [
+    [
+      412,
+      38
+    ],
+    [
+      49,
+      401
+    ]
+  ]
+}
